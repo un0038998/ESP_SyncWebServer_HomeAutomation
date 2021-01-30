@@ -5,8 +5,8 @@
 
 #define LOW_LEVEL_TRIGGERED_RELAYS true
 
-const char* ssid     = "ababd269";
-const char* password = "E4F25C5E26D9";
+const char* ssid     = "******";  //Your wifi ssid
+const char* password = "*******";  // Your wifi password
 
 WebServer server(80);
 
@@ -23,7 +23,7 @@ std::vector<MY_RELAY_PINS> myRelayPins =
   {"Relay1", 4, 0, "Bulb"},
   {"Relay2", 16, 0, "Lamp"},
   {"Relay3", 17, 0, "Christmas Light"},
-  {"Relay4", 18, 0, "Blue Light"},    
+  {"Relay4", 18, 0, "LED"},    
 };
 
 const char* myInitialPage = R"HTMLHOMEPAGE(
